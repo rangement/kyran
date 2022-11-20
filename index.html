@@ -177,7 +177,6 @@ function MovingTitle(writeText, interval, visibleLetters) {
       font-weight: normal;
       font-size: 1.3vw;
       color: #003333;
-
     }
 
     img{
@@ -188,6 +187,38 @@ function MovingTitle(writeText, interval, visibleLetters) {
       position: relative;
     }
 
+    /* MOBILE */
+
+    @media only screen and (max-width: 650px){
+
+      #text{
+        outline: 1px solid #003333;
+        z-index:0;
+        width:50%;
+        height:30%;
+        padding: 0% 5% 7% 5%;
+        top: 20%;
+        left: 20%;
+        font-size: 4vw;
+      }
+
+      .container{
+        width:40%;
+        top: 55%;
+        left: 10%;
+      }
+
+      .avatar-bubble{
+        opacity: 0.0;
+      }
+
+      #bubble-text{
+        font-size: 2vw;
+      }
+
+    }
+
+
   </style>
 
   </head>
@@ -197,9 +228,10 @@ function MovingTitle(writeText, interval, visibleLetters) {
     <div id="text">Sunday<br>20.11.2022<br><br>
     Congrats on being 23!<br><br>
     (✿╹◡╹)人(╹◡╹๑)～♪<br><br>
-    I hope you are having a
-    lovely bday and that I
-    get to speak to you today! And even if I don't
+    I wish you a lovely
+    birthday and hope I
+    get to speak to you later!
+    And even if I don't
     it's fine because I know
     that you've met some
     wonderful people so far
@@ -210,10 +242,11 @@ function MovingTitle(writeText, interval, visibleLetters) {
     I thought I'd make you something
     for a change.
     <br>This is Susie btw! →
-    <br>She said she
-    would happily replace me to accompany
-    you on a walk in the streets of PVD
-    (I wish I could teleport over for a beer!)
+    <br>I sent her over to
+    deliver this message for me. I wish
+    you and I could go
+    on a walk in the streets of PVD
+    (or that I could teleport over for a beer!)
     <br><br>
     Sending you all my love
     and the biggest hugs,
@@ -222,6 +255,8 @@ function MovingTitle(writeText, interval, visibleLetters) {
     <br><br>
     P.S.: if you're not having a good day tough times
     never last (unless, hopefully, for evil billionaires).
+    <br><br>
+    P.P.S.: do you recognize the music?
     </div>
 
     <div id="playground">
